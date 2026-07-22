@@ -28,6 +28,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Originating near Kalighat Temple in Kolkata, Patachitra art features sweeping curved lines, volumetric shading, and vibrant watercolors depicting deities and Bengali folklore.',
     colorPaletteHex: ['#DC2626', '#15803D', '#F59E0B', '#1E293B', '#FFFFFF'],
     svgArtType: 'kalighat_cat',
+    imageUrl: '/images/kalighat_patachitra_trinayani.jpg',
     culturalStory: 'Patua artists recited lyrical ballads (Pater Gaan) while unfurling these hand-painted paper scrolls across Bengal villages during festival gatherings.'
   },
   {

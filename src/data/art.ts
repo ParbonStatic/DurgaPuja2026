@@ -13,7 +13,8 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Jamini Roy redefined modern Indian art by rejecting Western academic oil painting in favor of traditional Bengali folk art, bold brushstrokes, and almond-shaped sacred eyes.',
     colorPaletteHex: ['#991B1B', '#D97706', '#FEF08A', '#1E1B18', '#FAF6F0'],
     svgArtType: 'jamini_durga',
-    culturalStory: 'Jamini Roy used eco-friendly homemade pigments from Tamarind seed paste, alluvial clay, and turmeric to capture Bengal’s authentic spiritual folk soul.'
+    imageUrl: '/images/jamini_durga_mahishasura.png',
+    culturalStory: 'Jamini Roy used eco-friendly homemade pigments from Tamarind seed paste, alluvial clay, and turmeric to capture Bengal’s authentic spiritual folk soul. His iconic depiction of Goddess Durga with Mahishasura showcases ten-armed empowerment, sweeping brushwork, and serene almond eyes.'
   },
   {
     id: 'art-kalighat-patachitra',

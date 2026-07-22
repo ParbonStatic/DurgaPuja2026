@@ -26,6 +26,7 @@ export interface ArtWork {
   descriptionEn: string;
   colorPaletteHex: string[];
   svgArtType: 'jamini_durga' | 'kalighat_cat' | 'terracotta_temple' | 'kumartuli_idol' | 'tagore_landscape' | 'alpana_mandala';
+  imageUrl?: string;
   culturalStory: string;
 }
 

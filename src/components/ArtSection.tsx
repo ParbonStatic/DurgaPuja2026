@@ -152,18 +152,34 @@ export const ArtSection: React.FC = () => {
               className="bg-[#FFFDF7] rounded-3xl border-2 border-[#D97706]/30 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
             >
               
-              {/* Card Header & SVG Illustration */}
+              {/* Card Header & Artwork Image / SVG */}
               <div>
-                <div className="relative overflow-hidden rounded-t-2xl border-b border-amber-200">
-                  {renderSvgArt(art.svgArtType)}
+                <div className="relative overflow-hidden rounded-t-2xl border-b border-amber-200 bg-[#1E1B18]/5">
+                  {art.imageUrl ? (
+                    <img
+                      src={art.imageUrl}
+                      alt={art.titleEn}
+                      className="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    renderSvgArt(art.svgArtType)
+                  )}
                   
-                  <div className="absolute top-3 left-3 bg-[#991B1B]/90 text-[#FEF08A] px-2.5 py-1 rounded-md text-[10px] font-bold uppercase backdrop-blur-sm">
+                  <div className="absolute top-3 left-3 bg-[#991B1B]/90 text-[#FEF08A] px-2.5 py-1 rounded-md text-[10px] font-bold uppercase backdrop-blur-sm shadow">
                     {art.styleCategory}
                   </div>
+
+                  {art.imageUrl && (
+                    <div className="absolute top-3 right-3 bg-[#D97706]/90 text-[#FFFDF7] px-2 py-0.5 rounded text-[10px] font-bold uppercase backdrop-blur-sm shadow flex items-center gap-1">
+                      <Sparkles className="w-3 h-3 text-[#FEF08A]" />
+                      Masterpiece
+                    </div>
+                  )}
 
                   <button
                     onClick={() => setSelectedArt(art)}
                     className="absolute bottom-3 right-3 bg-white/90 text-[#7F1D1D] p-2 rounded-full shadow hover:bg-white transition flex items-center gap-1 text-xs font-bold"
+                    title="View Full Masterpiece"
                   >
                     <Eye className="w-3.5 h-3.5" />
                   </button>
@@ -245,8 +261,23 @@ export const ArtSection: React.FC = () => {
               <p className="text-sm text-gray-600">{selectedArt.titleEn}</p>
             </div>
 
-            <div className="p-4 bg-amber-50 rounded-2xl border border-amber-200">
-              {renderSvgArt(selectedArt.svgArtType)}
+            <div className="p-2 bg-[#1E1B18] rounded-2xl border-2 border-[#D97706] shadow-inner overflow-hidden">
+              {selectedArt.imageUrl ? (
+                <div className="relative group">
+                  <img
+                    src={selectedArt.imageUrl}
+                    alt={selectedArt.titleEn}
+                    className="w-full max-h-[420px] object-contain rounded-xl mx-auto shadow-lg"
+                  />
+                  <div className="mt-2 text-center text-xs text-[#FEF08A] font-bengali-serif py-1.5 bg-[#991B1B]/80 rounded-b-xl border-t border-amber-500/30">
+                    যামিনী রায় মাস্টারপিস চিত্রমালা • Authentic Jamini Roy Folk Tempera Masterpiece
+                  </div>
+                </div>
+              ) : (
+                <div className="p-4 bg-amber-50 rounded-2xl border border-amber-200">
+                  {renderSvgArt(selectedArt.svgArtType)}
+                </div>
+              )}
             </div>
 
             <div className="space-y-3">

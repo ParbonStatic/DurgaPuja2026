@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --color-crimson: #991b1b;
+    --color-gold: #d97706;
+    --color-gorod-white: #fffdf7;
+    --color-terracotta: #9a3412;
+    --color-kash: #f8fafc;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+    background-color: #fffdf7;
+    color: #1e1b18;
+    overflow-x: hidden;
+  }
+
+  /* Custom Bel Pata Mouse Cursor */
+  .bel-pata-cursor,
+  .bel-pata-cursor * {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M16 3C13 8 8 11 8 16c0 4 3 7 7 7 1-4 3-8 8-11-2 4-2 9 1 12 4 0 7-3 7-7 0-5-5-8-7-14z' fill='%2315803d' stroke='%23fef08a' stroke-width='1.5'/%3E%3Cpath d='M16 23v7' stroke='%23854d0e' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") 16 16, auto !important;
+  }
+}
+
+.font-bengali-serif {
+  font-family: 'Noto Serif Bengali', serif;
+}
+
+.font-bengali-sans {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-bengali-calligraphy {
+  font-family: 'Atma', cursive;
+}
+
+/* Custom background patterns */
+.bg-alpana-pattern {
+  background-image: radial-gradient(rgba(153, 27, 27, 0.08) 1.5px, transparent 1.5px), radial-gradient(rgba(217, 119, 6, 0.08) 1.5px, #fffdf7 1.5px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-gorod-texture {
+  background-color: #fffdfa;
+  background-image: linear-gradient(to right, rgba(153,27,27,0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(217,119,6,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #b45309 0%, #f59e0b 50%, #78350f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-crimson-gradient {
+  background: linear-gradient(135deg, #991b1b 0%, #dc2626 50%, #7f1d1d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Kash Phool Sway Animation */
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-3deg) skewX(-2deg);
+  }
+  50% {
+    transform: rotate(4deg) skewX(3deg);
+  }
+}
+
+.animate-sway {
+  animation: sway 4.5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-sway-delayed {
+  animation: sway 5.5s ease-in-out 1.2s infinite;
+  transform-origin: bottom center;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(254,240,138,0.4) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Pulse aura for Durga Third Eye */
+@keyframes eyeGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(220, 38, 38, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(217, 119, 6, 0.8));
+  }
+}
+
+.animate-eye-glow {
+  animation: eyeGlow 3s infinite ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fffdf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #991b1b;
+}
+

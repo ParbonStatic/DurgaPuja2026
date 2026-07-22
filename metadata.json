@@ -1,0 +1,6 @@
+{
+  "name": "Sharodiyo - Bengali Cultural Tribute & Durga Puja 2026",
+  "description": "An aesthetic Bengali cultural website paying tribute to Durga Puja 2026, showcasing Bengali literature, traditional art, interactive Dhak soundboard, Alpana canvas, and authentic motifs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,5 +1,7 @@
 import { ArtWork } from '../types';
 
+const IMG_BASE = `${import.meta.env.BASE_URL}images/`;
+
 export const ART_WORKS: ArtWork[] = [
   {
     id: 'art-jamini-durga',
@@ -13,7 +15,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Jamini Roy redefined modern Indian art by rejecting Western academic oil painting in favor of traditional Bengali folk art, bold brushstrokes, and almond-shaped sacred eyes.',
     colorPaletteHex: ['#991B1B', '#D97706', '#FEF08A', '#1E1B18', '#FAF6F0'],
     svgArtType: 'jamini_durga',
-    imageUrl: '/images/jamini_durga_mahishasura.png',
+    imageUrl: `${IMG_BASE}jamini_durga_mahishasura.png`,
     culturalStory: 'Jamini Roy used eco-friendly homemade pigments from Tamarind seed paste, alluvial clay, and turmeric to capture Bengal’s authentic spiritual folk soul. His iconic depiction of Goddess Durga with Mahishasura showcases ten-armed empowerment, sweeping brushwork, and serene almond eyes.'
   },
   {
@@ -28,7 +30,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Originating near Kalighat Temple in Kolkata, Patachitra art features sweeping curved lines, volumetric shading, and vibrant watercolors depicting deities and Bengali folklore.',
     colorPaletteHex: ['#DC2626', '#15803D', '#F59E0B', '#1E293B', '#FFFFFF'],
     svgArtType: 'kalighat_cat',
-    imageUrl: '/images/kalighat_patachitra_trinayani.jpg',
+    imageUrl: `${IMG_BASE}kalighat_patachitra_trinayani.jpg`,
     culturalStory: 'Patua artists recited lyrical ballads (Pater Gaan) while unfurling these hand-painted paper scrolls across Bengal villages during festival gatherings.'
   },
   {
@@ -43,7 +45,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Because stone was scarce in deltaic Bengal, artisan guilds used baked clay tiles (Terracotta / পোড়ামাটি) to build breathtaking temples adorned with intricate epic motifs.',
     colorPaletteHex: ['#9A3412', '#C2410C', '#EA580C', '#451A03', '#FFEDD5'],
     svgArtType: 'terracotta_temple',
-    imageUrl: '/images/bishnupur_terracotta_carvings.jpg',
+    imageUrl: `${IMG_BASE}bishnupur_terracotta_carvings.jpg`,
     culturalStory: 'The famous Bankura Horse and terracotta panels of Bishnupur are global symbols of Bengali architectural resilience and indigenous craftsmanship.'
   },
   {
@@ -58,7 +60,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'In northern Kolkata’s Kumartuli pottery quarter along the Ganges, clay sculptors craft sacred Durga idols using Ganges mud, straw, and bamboo frames.',
     colorPaletteHex: ['#854D0E', '#A16207', '#EAB308', '#FEF3C7', '#78350F'],
     svgArtType: 'kumartuli_idol',
-    imageUrl: '/images/kumartuli_clay_idol_craftsmanship.jpg',
+    imageUrl: `${IMG_BASE}kumartuli_clay_idol_craftsmanship.jpg`,
     culturalStory: 'The most sacred ritual occurs on Mahalaya morning when the head sculptor paints Durga’s third eye (চক্ষুদান / Chakkhudan) in deep silent reverence.'
   },
   {
@@ -73,7 +75,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Abanindranath Tagore (nephew of Rabindranath) pioneered the Bengal School of Art, fusing delicate Japanese watercolor washes with Ajanta frescoes and Bengali spiritual themes.',
     colorPaletteHex: ['#7C2D12', '#B45309', '#FDE047', '#334155', '#F8FAFC'],
     svgArtType: 'tagore_landscape',
-    imageUrl: '/images/bengal_school_bharat_mata.jpg',
+    imageUrl: `${IMG_BASE}bengal_school_bharat_mata.jpg`,
     culturalStory: 'His iconic 1905 painting "Bharat Mata" portrayed Bengal as a four-armed goddess holding sacred scriptures, sheaves of paddy, white cloth, and a rosary.'
   }
 ];

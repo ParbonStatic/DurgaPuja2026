@@ -49,6 +49,8 @@ export const Footer: React.FC = () => {
             <span>© ২০২৬ শারদীয়া শ্রদ্ধাঞ্জলি</span>
             <span>•</span>
             <span>১৪৩৩ বঙ্গাব্দ</span>
+            <span>•</span>
+            <span>ParbonStatic Project</span>
           </div>
 
           <div className="flex items-center space-x-1">

@@ -43,6 +43,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Because stone was scarce in deltaic Bengal, artisan guilds used baked clay tiles (Terracotta / পোড়ামাটি) to build breathtaking temples adorned with intricate epic motifs.',
     colorPaletteHex: ['#9A3412', '#C2410C', '#EA580C', '#451A03', '#FFEDD5'],
     svgArtType: 'terracotta_temple',
+    imageUrl: '/images/bishnupur_terracotta_carvings.jpg',
     culturalStory: 'The famous Bankura Horse and terracotta panels of Bishnupur are global symbols of Bengali architectural resilience and indigenous craftsmanship.'
   },
   {
@@ -57,6 +58,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'In northern Kolkata’s Kumartuli pottery quarter along the Ganges, clay sculptors craft sacred Durga idols using Ganges mud, straw, and bamboo frames.',
     colorPaletteHex: ['#854D0E', '#A16207', '#EAB308', '#FEF3C7', '#78350F'],
     svgArtType: 'kumartuli_idol',
+    imageUrl: '/images/kumartuli_clay_idol_craftsmanship.jpg',
     culturalStory: 'The most sacred ritual occurs on Mahalaya morning when the head sculptor paints Durga’s third eye (চক্ষুদান / Chakkhudan) in deep silent reverence.'
   },
   {
@@ -71,6 +73,7 @@ export const ART_WORKS: ArtWork[] = [
     descriptionEn: 'Abanindranath Tagore (nephew of Rabindranath) pioneered the Bengal School of Art, fusing delicate Japanese watercolor washes with Ajanta frescoes and Bengali spiritual themes.',
     colorPaletteHex: ['#7C2D12', '#B45309', '#FDE047', '#334155', '#F8FAFC'],
     svgArtType: 'tagore_landscape',
+    imageUrl: '/images/bengal_school_bharat_mata.jpg',
     culturalStory: 'His iconic 1905 painting "Bharat Mata" portrayed Bengal as a four-armed goddess holding sacred scriptures, sheaves of paddy, white cloth, and a rosary.'
   }
 ];
